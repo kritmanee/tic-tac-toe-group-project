@@ -22,7 +22,7 @@ pg.init()
 fps = 30
 CLOCK = pg.time.Clock()
 screen = pg.display.set_mode((width, height+100),0,32)
-pg.display.set_caption("Tic Tac Toe")
+pg.display.set_caption("Tic Tac Toe Halloween Party")
 
 
 # 3. Load and trasform images
@@ -57,13 +57,13 @@ def draw_status():
     global draw
 
     if winner is None:
-        message = XO.upper() + "'s Turn"
+        message = XO.upper() + " TURN"
     else:
-        message = winner.upper() + " won! Congrats!!"
+        message = winner.upper() + " WON CONGRATS"
     if draw:
-        message = 'Game Draw!'
+        message = "GAME DRAW"
 
-    font = pg.font.Font("Scary Halloween Font.ttf", 20) 
+    font = pg.font.Font("CFHalloween-Regular.ttf", 20) 
     text = font.render(message, 1, (255, 255, 255))
 
     # copy the rendered message onto the board
