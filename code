@@ -174,10 +174,10 @@ def userClick():
 def reset_game():
     global TTT, winner, XO, draw
     time.sleep(3)
+    winner=None
     XO = 'x'
     draw = False
     game_opening()
-    winner=None
     TTT = [[None]*3,[None]*3,[None]*3]
 
 # run the game forever
